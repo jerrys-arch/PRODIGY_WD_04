@@ -1,7 +1,7 @@
-/* Henok Enyew Portfolio */
+
 
 :root {
-  --white-mode-color: #333;
+  --white-mode-color: #ccc;
   --primary-color: #7048e8;
   --primary-color--dark: #5f3dc4;
   --primary-color--light: #845ef7;
@@ -9,17 +9,6 @@
   --darkmode-color: #fafafa;
 }
 
-/*
-Spacing 
-    2/4/8/12/16/24/32/48/64/80/96/128
-Font sizes
-    10/12/14/16/18/20/24/30/36/44/52/62/74/86/98
-Font Weights
-    Default: 400
-    Medium: 500
-    Semi-bold: 600
-    Bold: 700
-*/
 
 * {
   margin: 0;
@@ -36,7 +25,8 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: var(--white-mode-color);
+  
+ 
 }
 /* General */
 section {
@@ -58,7 +48,7 @@ section {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #e2dafa;
+  background-color: #141414;
   height: 6rem;
   display: flex;
   align-items: center;
@@ -68,7 +58,8 @@ section {
 }
 
 .nav-logo {
-  width: 14.8rem;
+  width: 10rem;
+  
 }
 
 .nav-btns {
@@ -77,10 +68,11 @@ section {
   column-gap: 2.4rem;
   font-size: 1.8rem;
   transition: all 0.4s;
+  margin-right: 3rem;
 }
 
 .nav-btn:link {
-  text-decoration: none;
+  text-decoration:none;
   color: var(--white-mode-color);
   transition: all 0.4s;
 }
@@ -119,11 +111,11 @@ section {
   fill: var(--primary-color--dark);
   transform: scale(1.15);
 }
-/* .close-btn {
-  display: none;
-} */
-/* hero */
 
+/* hero */
+#home{
+  background-color: var(--darkmode-background);
+}
 .hero {
   display: flex;
   align-items: center;
@@ -136,11 +128,6 @@ section {
   overflow: hidden;
 }
 
-/* .weavy-hero {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-} */
 
 .hero:before {
   content: "";
@@ -151,29 +138,20 @@ section {
   height: 200px;
   background: #fff;
   clip-path: polygon(0 60%, 100% 100%, 0 100%);
-  /* clip-path: polygon(100% 60%, 0 100%, 100% 100%); */
+ 
 }
 
-.hero-illustration svg {
-  width: 48rem;
-  animation: float 2.5s infinite alternate ease-in-out;
-}
-@keyframes float {
-  0% {
-    transform: translateY(-8px);
-  }
-  100% {
-    transform: translateY(8px);
-  }
-}
-.hero-text .hi-there {
+
+.hero-text .hey-there {
   font-size: 2.4rem;
+  color:var(--white-mode-color);
 }
 
 .hero-text .greeting {
   margin-top: 1.2rem;
   font-size: 5.2rem;
   font-weight: 700;
+  color:var(--white-mode-color);
 }
 
 .hero-text .greeting span {
@@ -184,25 +162,22 @@ section {
   font-size: 4rem;
   font-weight: 600;
   margin-top: 1rem;
+  color: var(--primary-color);
 }
-
+.detail{
+  color:var(--white-mode-color);
+ 
+}
 .hero-text .career span {
   color: var(--primary-color--light);
   position: relative;
 }
-
-/* .hero-text .career span::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #e2dafa;
-  border-left: 2px solid var(--primary-color);
-   animation: type 4s steps(15) infinite; 
-  padding-left: 1px;
-} */
+#cv{
+  color:white ;
+}
+#cv:hover{
+  color: white;
+}
 
 @keyframes type {
   40%,
@@ -219,7 +194,9 @@ section {
   font-size: 1.5rem;
   max-width: 45rem;
   line-height: 1.2;
+  
 }
+
 
 .hero a {
   text-decoration: none;
@@ -237,19 +214,29 @@ section {
   background-color: var(--primary-color);
   margin-left: 2rem;
   color: #fff !important;
+
 }
 
 .hero a:hover {
-  color: #fff;
+  
   background-color: var(--primary-color--dark);
   transform: scale(1.1);
 }
 
+.h2{
+  margin-bottom: 20px; 
+  text-align:center; 
+  margin-top: 20px;
+  font-size:30px;
+  color:var(--primary-color);
+
+}
 .tech-stack {
   font-size: 1.6rem;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  justify-content: center;
+  gap: 4rem;
   margin-top: 4.8rem;
 }
 
@@ -264,11 +251,6 @@ section {
 .hero-text {
   animation: slideLeft forwards 1s;
 }
-
-/* .hero-illustration {
-  animation: slideRight forwards 1s;
-} */
-
 @keyframes slideLeft {
   0% {
     transform: translateX(-50%);
@@ -311,13 +293,18 @@ section {
 .about {
   padding: 2rem;
 }
-.about-header,
-.projects-header,
+.about-header{
+  text-align: center;
+  font-size: 30px;
+  color:var(--primary-color);
+  margin-bottom: 5rem;
+}
+
 .cta-header {
   font-size: 2.4rem;
   color: var(--primary-color);
   text-decoration: solid var(--primary-color);
-  margin-bottom: 4.8rem;
+  margin-bottom: 4.0rem;
 }
 .basic-details {
   display: flex;
@@ -353,14 +340,18 @@ section {
 }
 
 .brief-bio {
-  font-size: 1.4rem;
-  margin-top: 2.4rem;
+
+  margin-top: 1rem;
   margin-bottom: 1.6rem;
-  line-height: 1.3;
+ 
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 2.4rem;
 }
 .educational-detail {
-  font-size: 1.4rem;
-  line-height: 1.3;
+  
+  line-height: 4rem;
+  font-size: 1.5rem;
 }
 
 .educational-detail span {
@@ -378,12 +369,15 @@ section {
   padding-left: 1.6rem;
 }
 
-.henok-photo {
-  width: 20rem;
-  transform: skew(-2deg, 2deg);
-}
 
 /* Projects section */
+.projects-header{
+  margin-top: 100px;
+  text-align: center;
+  font-size:30px;
+  margin-bottom: 100px;
+  color:var(--primary-color);
+}
 .projects {
   margin-top: 2.8rem;
 }
@@ -397,7 +391,8 @@ section {
 }
 
 .project-img {
-  width: 48rem;
+  width: 46rem;
+  height: 35rem;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.4s;
 }
@@ -407,9 +402,9 @@ section {
 }
 
 .project-description a {
-  /* display: flex; */
+ 
   align-items: center;
-  /* justify-content: space-around; */
+  
   padding: 0.8rem 2rem;
   text-decoration: none;
   border-radius: 1rem;
@@ -436,7 +431,8 @@ section {
   color: var(--primary-color);
 }
 .project-detail {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   margin-bottom: 2.4rem;
 }
 
@@ -457,7 +453,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* column-gap: 4.8rem; */
+  
   padding: 2rem 4rem;
   border-radius: 1rem;
 }
@@ -525,10 +521,9 @@ footer {
 
 .footer-content {
   position: relative;
-  bottom: -60%;
+  bottom: -50%;
   left: 30%;
-  /* transform: translateX(-50%); */
-  color: #aaa;
+  color: #ccc;
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
@@ -548,6 +543,9 @@ footer {
   fill: #f3f3f3;
   transform: scale(1.2);
 }
+.footer-content p{
+  margin-left: 40px;
+}
 
 .techs {
   display: flex;
@@ -558,9 +556,3 @@ footer {
   margin-bottom: 12px;
   font-weight: 500;
 }
-/* 
-Spacing 
-    2/4/8/12/16/24/32/48/64/80/96/128
-Font sizes
-    10/12/14/16/18/20/24/30/36/44/52/62/74/86/98
- */

@@ -1,19 +1,4 @@
 "use strict";
-
-// const typeText = document.querySelector(".type-text");
-// const textLoad = function () {
-//   setTimeout(() => {
-//     typeText.textContent = "Web Developer";
-//   }, 0);
-
-//   setTimeout(() => {
-//     typeText.textContent = "Software Engineer";
-//   }, 4000);
-// };
-
-// textLoad();
-// setInterval(textLoad, 8000);
-
 const typingEffect = new Typed(".type-text-new", {
   strings: ["Web developer", "Software Engineer"],
   loop: true,
