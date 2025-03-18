@@ -2,7 +2,7 @@
 
 # personal portfolio Website
 
-Welcome to the repository of my online Curriculum Vitae. This platform is developed using React and showcases my academic background, professional experiences, and various technical and research projects.
+Welcome to the repository of my online Curriculum Vitae. This platform is developed using React and showcases my academic background, my skills and my projects
 
 ## 🚀 Quick Start
 
