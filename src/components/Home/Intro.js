@@ -22,7 +22,7 @@ function Home2() {
               I started programming in early 2023, when I joined Software
               Engineering department at Bahir Dar Universty.
               <br />
-              <br />I first started with Python then worked on web development
+              <br />I first started with basic HTML and worked on web development
               for a while.
               <br />
               And my favorite coding language has been
