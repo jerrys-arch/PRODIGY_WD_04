@@ -51,30 +51,7 @@ npm start
 yarn start
 This should open up the application in your default web browser at http://localhost:3000.
 
-Folder Structure
-pgsql
-Copy
-/public
-  ├── favicon.png
-  ├── index.html
-  ├── manifest.json
-/src
-  ├── /Assets
-  ├── /components
-  │    ├── About.js
-  │    ├── ContactForm.js
-  │    ├── Footer.js
-  │    ├── Home.js
-  │    ├── Navbar.js
-  │    ├── Projects.js
-  │    └── Resume.js
-  ├── App.js
-  ├── index.js
-  ├── style.css
-  └── setupTests.js
-.gitignore
-package.json
-README.md
+
 Libraries Used
 React: A JavaScript library for building user interfaces.
 
@@ -109,10 +86,7 @@ Copy
 1. **React Icons**: The `react-icons` library is now mentioned under "Libraries Used," and installation instructions are provided.
 2. **PDF Link**: There’s a placeholder link for your portfolio's PDF (you can replace the placeholder with the actual path or URL to the PDF).
 
-### To Modify:
-1. **Replace the demo link** (`https://your-live-portfolio-link.com`) with the actual link to your deployed portfolio.
-2. **Replace the PDF link** (`src/Assets/Resume.pdf`) with the correct path to your resume or PDF file.
 
-This `README.md` is now set up for easy copy-paste into your project!
+T
 
 
