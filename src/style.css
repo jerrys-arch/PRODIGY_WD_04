@@ -422,12 +422,14 @@ html {
   
   .footer-left h3 {
     text-align: left;
-    font-size: 15px;
-    color: white; 
+    font-size: 18px;
+    color: white;
+    padding-left: 20px; 
   }
   
   .footer-right {
     text-align: right;
+    padding-right: 20px;
   }
   
   .footer-icons {
