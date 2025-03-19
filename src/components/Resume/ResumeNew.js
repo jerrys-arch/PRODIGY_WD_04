@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import myResumePDF from "../../Assets/Eyerus-Molla.pdf";  
+import myResumePDF from "../../Assets/Eyerus_Molla_Resume.pdf";  
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import { motion } from "framer-motion";
